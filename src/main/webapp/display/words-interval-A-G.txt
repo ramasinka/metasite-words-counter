@@ -1,0 +1,7 @@
+am 1
+and 1
+are 5
+day 1
+doing 2
+fine 1
+good 2

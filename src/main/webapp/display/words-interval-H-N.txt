@@ -1,0 +1,6 @@
+hello 4
+how 3
+i 1
+labas 10
+me 1
+morning 2
