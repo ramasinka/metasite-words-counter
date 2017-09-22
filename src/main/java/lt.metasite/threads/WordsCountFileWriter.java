@@ -57,7 +57,7 @@ public class WordsCountFileWriter implements Runnable {
                 .forEach(map -> {
                     String word = map.getKey();
                     char first = word.charAt(0);
-                    if (Collections.binarySearch(chars, first) >= 0) {
+                    if (chars.contains(first)) {
                         filteredWords.put(word, map.getValue());
                     }
                 });
@@ -65,7 +65,7 @@ public class WordsCountFileWriter implements Runnable {
     }
 
     private List<Character> getChars(char at, char till) {
-        List<Character> characters = new ArrayList<>();
+        Set<Character> characters = new HashSet<>();
         for (char c = at; c <= till; c++) {
             characters.add(c);
         }
